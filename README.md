@@ -22,5 +22,33 @@ The command interpreter is started by inputing the following into the cli
 ```
 ./console.py
 ```
+
 ### How to use it
+The command interpreter works like this in interactive mode:
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+
+But also in non-interactive mode:
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+
 ### Examples
