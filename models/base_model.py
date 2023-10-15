@@ -4,7 +4,6 @@ a class BaseModel
 """
 import uuid
 from datetime import datetime
-import models
 
 
 class BaseModel:
@@ -21,6 +20,7 @@ class BaseModel:
                 args:
                 kwargs:
         """
+        import models
         if kwargs:
             for key, value in kwargs.items():
                 if key != "__class__":
@@ -47,6 +47,7 @@ class BaseModel:
             updates the public instance attribute updated_at
             with the current datetime
         """
+        import models
         self.updated_at = datetime.now()
         models.storage.save()
 
