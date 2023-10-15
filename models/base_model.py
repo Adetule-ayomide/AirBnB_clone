@@ -12,6 +12,8 @@ class BaseModel:
     a class BaseModel that defines all common attributes/methods
     for other classes
     """
+    format = "%Y-%m-%dT%H:%M:%S.%f"
+
     def __init__(self, *args, **kwargs):
         """
             Instantiation of object
@@ -23,8 +25,8 @@ class BaseModel:
             for key, value in kwargs.items():
                 if key != "__class__":
                     if key == "created_at" or key == "updated_at":
-                        setattr(self, key, datetime.strptime(value,
-                                                             "%Y-%m-%dT%H:%M:%S.%f"))
+                        setattr(self, key,
+                                datetime.strptime(value, BaseModel.format))
                     else:
                         setattr(self, key, kwargs[key])
         else:
