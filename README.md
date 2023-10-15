@@ -18,5 +18,7 @@ It is similar to a Shell but limited to a specific use-case. In this case, it is
    - Destroy an object
 
 ### How to start it
+The command interpreter is started by inputing the following into the cli
+```./console.py```
 ### How to use it
 ### Examples
