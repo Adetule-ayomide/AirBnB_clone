@@ -19,6 +19,8 @@ It is similar to a Shell but limited to a specific use-case. In this case, it is
 
 ### How to start it
 The command interpreter is started by inputing the following into the cli
-```./console.py```
+```
+./console.py
+```
 ### How to use it
 ### Examples
