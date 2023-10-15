@@ -1,6 +1,10 @@
 import unittest
+from os import path
 from models.base_model import BaseModel
 from datetime import datetime
+
+
+MODEL = path.join(path.join(getcwd(), 'models', 'user.py'))
 
 class TestUser(unittest.TestCase):
 
