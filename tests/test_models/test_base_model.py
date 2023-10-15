@@ -1,9 +1,11 @@
 import unittest
 """unittest for BaseModel"""
+from os import path
 from models.base_model import BaseModel
 from datetime import datetime
 import uuid
 
+MODEL = path.join(path.join(getcwd(), 'models', 'base_model.py'))
 
 class TestBase(unittest.TestCase):
     """test BaseModel functionality"""
