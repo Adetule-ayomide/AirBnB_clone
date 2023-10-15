@@ -55,7 +55,7 @@ class HBNBCommand(cmd.Cmd):
             print("** instance id missing **")
             return
 
-        if cls_name in models.classNames:
+        if args[0] in models.classNames:
             cls_name, instance_id = args[0], args[1]
             search_instance = f"{cls_name}.{instance_id}"
             if search_instance in models.storage.all():
