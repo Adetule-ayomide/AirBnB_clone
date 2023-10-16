@@ -18,6 +18,7 @@ class HBNBCommand(cmd.Cmd):
         """
         if not args:
             print("** class name missing **")
+            return
         if args in models.classNames:
             new_instance = models.classNames[args]()
             new_instance.save()
